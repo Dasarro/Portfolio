@@ -40,6 +40,11 @@
     font-size: 18px;
     max-width: 1440px;
   }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
   .navbar {
     display: flex;
@@ -89,4 +94,90 @@
     margin-left: 13px;
     width: 122.78px;
     height: 27.65px;
+  }
+
+  .header {
+    position: relative;
+    height: 585px;
+    width: 100%;
+    background-image: url("headera.png");
+    background-size: cover;
+  }
+
+  .header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .b {
+    opacity: 0.3;
+  }
+
+  .header .filter {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 585px;
+    background-color: #fff;
+    position: absolute;
+    opacity: 0.1;
+  }
+
+  .header .title {
+    position: absolute;
+    top: 172px;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .header .title h1 {
+    width: 507px;
+    height: 118px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 117px;
+    letter-spacing: 0.02em;
+    color: #FFC53D;
+  }
+
+  h2 {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+  }
+
+  .header .title h2 {
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .header .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .header .social .circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12.5px;
+    margin-left: 12.5px;
+    margin-top: 28px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .header .social .git {
+    margin-right: 12.5px;
+    margin-left: 12.5px;
+    margin-top: 28px;
   }
