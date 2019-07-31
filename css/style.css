@@ -410,3 +410,119 @@
     font-weight: bold;
     margin-bottom: 14px;
   }
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1440px;
+  height: 752px;
+  margin-bottom: 72px;
+}
+
+.portfolio h3 {
+  width: 100%;
+  height: 32px;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.portfolio .one {
+  width: 530px;
+  height: 346px;
+  background-image: url("one.png");
+  background-size: cover;
+}
+
+.portfolio .two {
+  width: 392px;
+  height: 346px;
+  background-image: url("two.png");
+  background-size: cover;
+}
+
+.portfolio .three {
+  width: 518px;
+  height: 346px;
+  background-image: url("three.png");
+  background-size: cover;
+}
+
+.portfolio .four {
+  width: 392px;
+  height: 352px;
+  background-image: url("four.png");
+  background-size: cover;
+}
+
+.portfolio .five {
+  width: 1048px;
+  height: 352px;
+  background-image: url("five.png");
+  background-size: cover;
+}
+
+.portfolio .gradient {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
+}
+
+h5 {
+  width: calc(100% - 36px);
+  margin: 25px 0 4px 36px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.portfolio p {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  margin-left: 36px;
+  margin-bottom: 36px;
+  color: #FFFFFF;
+}
+
+.portfolio .box {
+  display: flex;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.portfolio .box .view {
+  border-radius: 15px;
+  background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+  box-sizing: border-box;
+  padding: 14px 28px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 83px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #A0A0A0;
+}
