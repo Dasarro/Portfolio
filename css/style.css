@@ -156,13 +156,13 @@
     color: #fff;
   }
 
-  .header .social {
+  .social {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
-  .header .social .circle {
+  .social .circle {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -176,7 +176,7 @@
     background-color: #fff;
   }
 
-  .header .social .git {
+  .social .git {
     margin-right: 12.5px;
     margin-left: 12.5px;
     margin-top: 28px;
@@ -510,6 +510,203 @@ h5 {
   background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
   box-sizing: border-box;
   padding: 14px 28px;
+}
+
+.contact-us {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1440px;
+  height: 785px;
+  background: #FAFAFF;
+}
+
+.contact-us .main {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 1241px;
+  height: 621px;
+  left: 100px;
+  top: 74px;
+  background: #FFFFFF;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-us h3 {
+  align-self: flex-start;
+  position: absolute;
+  font-family: Ubuntu;
+  left: 152px;
+  top: 18px;
+}
+
+.contact-us .main .orange {
+  width: 509px;
+  height: 100%;
+  background: #FF9A3D;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-us .main .orange .first {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contact-us .main .orange .mail {
+  margin: 40px 0 40px 52px;
+}
+
+.contact-us .main .orange .first p {
+  margin-left: 52px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 172.35%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.contact-us .main .orange .second {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.contact-us .main .orange .social {
+  height: auto;
+  margin-left: 52px;
+  justify-content: flex-start;
+  justify-self: flex-end;
+}
+
+.contact-us .main .orange .social .circle.a {
+  margin-left: 0;
+}
+
+.contact-us .main .orange .social .circle {
+  margin-top: 0;
+}
+
+.contact-us .main .orange .social .git {
+  margin-top: 0;
+}
+
+.contact-us .main .orange .second p {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  margin-bottom: 35px;
+  margin-left: 52px;
+  margin-top: 9px;
+}
+
+.contact-us .main .white {
+  display: flex;
+  flex-direction: column;
+  width: 732px;
+  height: 100%;
+}
+
+.contact-us .main .white .first {
+  position: relative;
+  width: 732px;
+  height: 100px;
+}
+
+.contact-us .main .white .first .arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;   
+    border-left: 18px solid #FF9A3D;
+    margin-top: 33px;
+}
+
+.contact-us .main .white h2 {
+  position: absolute; 
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 172.35%;
+  letter-spacing: 0.04em;
+  color: #222222;
+  left: 48px;
+  top: 20px;
+}
+
+.contact-us .main .white .second {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 732px;
+  height: calc(100% - 100px);
+}
+
+.contact-us .main .white .second input[type=text],
+.contact-us .main .white .second textarea{
+  box-sizing: border-box;
+  width: 639px;
+  height: 56px;
+  background: #FAFAFF;
+  border-radius: 15px;
+  padding: 0px 24px;
+  margin-bottom: 17px;
+  box-shadow: 3px 3px 10px -3px rgba(200,200,200,1);
+  border: none;
+
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #A0A0A0;
+}
+
+.contact-us .main .white .second textarea {
+  flex-direction: column;
+  height: 180px;
+  line-height: 180px;
+  resize: none;
+}
+
+.contact-us .main .white .second textarea:focus{
+  line-height: 25px;
+}
+
+.contact-us .main .white .second input[type=submit] {
+  position: absolute;
+  right: 45px;
+  bottom: 36px;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFC53D;
+
+  border: 1px solid #FFC53D;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: #fff;
+  width: 100px;
+  height: 50px;
 }
 
 .footer {
