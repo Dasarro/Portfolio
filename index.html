@@ -17,10 +17,10 @@
                     <span class="dev">Dev</span>
                  </div>
                 <ul class="navigation">
-                    <li class="box a">About me</li>
-                    <li class="box b">Skills</li>
-                    <li class="box c">Portfolio</li>
-                    <li class="box d">Contact</li>
+                    <li class="box a"><a href="index.html#about">About me</a></li>
+                    <li class="box b"><a href="index.html#skills">Skills</a></li>
+                    <li class="box c"><a href="index.html#portfolio">Portfolio</a></li>
+                    <li class="box d"><a href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="header">
@@ -31,10 +31,10 @@
                         <h1>Welcome!</h1>
                         <h2>My name is Witold Sterna.</h2>
                         <div class="social">
-                            <div class="circle"><img src="css/twitter.png"></div>
-                            <div class="circle"><img src="css/linkedin.png"></div>
-                            <div class="git"><img src="css/git.png"></div>
-                            <div class="circle"><img src="css/facebook.png"></div>
+                            <div class="circle"><a href="https://twitter.com/" target="_blank"><img src="css/twitter.png"></a></div>
+                            <div class="circle"><a href="https://www.linkedin.com/" target="_blank"><img src="css/linkedin.png"></a></div>
+                            <div class="git"><a href="https://github.com/Dasarro" target="_blank"><img src="css/git.png"></a></div>
+                            <div class="circle"><a href="https://www.facebook.com/witek.sterna.7" target="_blank"><img src="css/facebook.png"></a></div>
                         </div>
                     </div>
                 </div>
@@ -43,11 +43,11 @@
             <div class="contact-me">
                 <h2>I am happy to help you with any problem!</h2>
                 <div class="buttons-contact">
-                    <div class="button a"><span>Contact me!</span></div>
-                    <div class="button b"><span>Check my CV</span></div>
+                    <a href="index.html#contact"><div class="button a"><span>Contact me!</span></div></a>
+                    <a href="#"><div class="button b"><span>Check my CV</span></div></a>
                 </div>
             </div>
-            <div class="about-me">
+            <div id="about" class="about-me">
                 <div class="color-box"><h3>About me</h3></div>
                 <div class="white-box">
                     <div class="informations">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <div class="skills">
+            <div id="skills" class="skills">
                 <div class="color-box"><h3>Skills</h3></div>
                 <div class="white-box">
                     <div class="skill a">
@@ -87,13 +87,13 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolio">
+            <div id="portfolio" class="portfolio">
                 <h3>Portfolio</h3>
                 <div class="one">
                     <div class="gradient">
                         <h5>Project 1</h5>
                         <p>My most recent project developed for a big company.</p>
-                        <div class="box"><p class="view">View</p></div>
+                        <div class="box"><a href="#"><p class="view">View</p></a></div>
                     </div>
                 </div>
                 <div class="two"></div>
@@ -103,11 +103,11 @@
                     <div class="gradient">
                         <h5>Project 2</h5>
                         <p>My second to last project made for private client.</p>
-                        <div class="box"><p class="view">View</p></div>
+                        <div class="box"><a href="#"><p class="view">View</p></a></div>
                     </div>
                 </div>
             </div>
-            <div class="contact-us">
+            <div id="contact" class="contact-us">
                 <h3>Contact me!</h3>
                 <div class="main">
                     <div class="orange">
@@ -121,10 +121,10 @@
                         </div>    
                         <div class="second">
                             <div class="social">
-                                <div class="circle a"><img src="css/twitter.png"></div>
-                                <div class="circle"><img src="css/linkedin.png"></div>
-                                <div class="git"><img src="css/git.png"></div>
-                                <div class="circle"><img src="css/facebook.png"></div>
+                                <div class="circle a"><a href="https://twitter.com/" target="_blank"><img src="css/twitter.png"></a></div>
+                                <div class="circle"><a href="https://www.linkedin.com/" target="_blank"><img src="css/linkedin.png"></a></div>
+                                <div class="git"><a href="https://github.com/Dasarro" target="_blank"><img src="css/git.png"></a></div>
+                                <div class="circle"><a href="https://www.facebook.com/witek.sterna.7" target="_blank"><img src="css/facebook.png"></a></div>
                             </div>
                             <p>
                                 <b>
@@ -143,10 +143,10 @@
                             <h2>Let's start!</h2>
                         </div>
                         <div class="second">
-                            <form><input type="text" placeholder="Name"></form>
-                            <form><input type="text" placeholder="Your e-mail address"></form>
-                            <form><input type="text" placeholder="Topic"></form>
-                            <form><textarea placeholder="Message"></textarea></form>
+                            <form><input type="text" placeholder="Name" onfocus="this.placeholder=''" onblur="this.placeholder='Name'"></form>
+                            <form><input type="text" placeholder="Your e-mail address" onfocus="this.placeholder=''" onblur="this.placeholder='Your e-mail address'"></form>
+                            <form><input type="text" placeholder="Topic" onfocus="this.placeholder=''" onblur="this.placeholder='Topic'"></form>
+                            <form><textarea placeholder="Message" onfocus="this.placeholder=''" onblur="this.placeholder='Message'"></textarea></form>
                             <input type="submit" value="Send">
                         </div>
                     </div>

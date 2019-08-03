@@ -44,6 +44,7 @@
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .navbar {
@@ -60,7 +61,8 @@
     list-style-type: none;
   }
 
-  .navbar .navigation .box {
+  .navbar .navigation .box,
+  .navbar .navigation .box a {
     width: auto;
     height: 20px;
     font-family: Raleway;
@@ -69,6 +71,15 @@
     letter-spacing: 0.02em;
     color: #515151;
     margin: 48px 22px 27px 22px;  
+    text-decoration: none;
+  }
+
+  .navbar .navigation .box {
+    transition: all 0.7s ease-in-out;
+  }
+
+  .navbar .navigation .box:hover {
+    transform: scale(1.2);
   }
 
   .navbar .navigation .box.d {
@@ -162,7 +173,7 @@
     justify-content: center;
   }
 
-  .social .circle {
+  .social .circle a {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -176,7 +187,7 @@
     background-color: #fff;
   }
 
-  .social .git {
+  .social .git{
     margin-right: 12.5px;
     margin-left: 12.5px;
     margin-top: 28px;
@@ -201,12 +212,17 @@
     justify-content: center;
   }
 
-  .contact-me .buttons-contact .button {
+  .contact-me .buttons-contact a {
+    text-decoration: none;
+  }
+  
+  .contact-me .buttons-contact a .button {
     display: flex;
     flex-direction: row;
     width: 200px;
     height: 50px;
     margin: 36px 40px 52px 40px;
+    box-sizing: border-box;
   }
 
   .contact-me .buttons-contact .button.a {
@@ -214,12 +230,30 @@
     box-sizing: border-box;
     border-radius: 15px;
     color: #FFC53D;
+    transition-property: background, color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
   }
 
   .contact-me .buttons-contact .button.b {
     background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    border: 1px solid rgba(255, 197, 61, 0);
     border-radius: 15px;
     color: #fff;
+    transition-property: background, color, border-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+  }
+
+  .contact-me .buttons-contact .button.a:hover {
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    color: #fff;
+  }
+
+  .contact-me .buttons-contact .button.b:hover {
+    background: #fff;
+    color: #FFC53D;
+    border-color: rgba(255, 197, 61, 1);
   }
 
   .contact-me .buttons-contact .button span {
@@ -470,6 +504,10 @@
   background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
 }
 
+.portfolio a {
+  text-decoration: none;
+}
+
 h5 {
   width: calc(100% - 36px);
   margin: 25px 0 4px 36px;
@@ -510,6 +548,13 @@ h5 {
   background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
   box-sizing: border-box;
   padding: 14px 28px;
+  margin-bottom: 0;
+  transition: font-size 0.7s ease-in-out, line-height 0.7s ease-in-out;
+}
+
+.portfolio .box .view:hover {
+  font-size: 22px;
+  line-height: 24px;
 }
 
 .contact-us {
@@ -588,11 +633,11 @@ h5 {
   justify-self: flex-end;
 }
 
-.contact-us .main .orange .social .circle.a {
+.contact-us .main .orange .social .circle.a a {
   margin-left: 0;
 }
 
-.contact-us .main .orange .social .circle {
+.contact-us .main .orange .social .circle a {
   margin-top: 0;
 }
 
@@ -668,6 +713,7 @@ h5 {
   margin-bottom: 17px;
   box-shadow: 3px 3px 10px -3px rgba(200,200,200,1);
   border: none;
+  outline: none;
 
   font-family: Ubuntu;
   font-style: normal;
@@ -680,12 +726,18 @@ h5 {
 .contact-us .main .white .second textarea {
   flex-direction: column;
   height: 180px;
-  line-height: 180px;
   resize: none;
+  overflow: auto;
 }
 
-.contact-us .main .white .second textarea:focus{
+.contact-us .main .white .second textarea::placeholder {
+  padding-top: 77.5px;
+}
+
+.contact-us .main .white .second textarea:focus,
+.contact-us .main .white .second input[type=text]:focus {
   line-height: 25px;
+  box-shadow: 3px 3px 10px -3px lightskyblue;
 }
 
 .contact-us .main .white .second input[type=submit] {
@@ -707,6 +759,11 @@ h5 {
   background: #fff;
   width: 100px;
   height: 50px;
+  outline: none;
+}
+
+.contact-us .main .white .second input[type=submit]:focus {
+  box-shadow: 3px 3px 10px -3px #FFC53D;
 }
 
 .footer {
