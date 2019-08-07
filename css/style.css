@@ -38,7 +38,7 @@
   html {
     background-color: #FFF;
     font-size: 18px;
-    max-width: 1440px;
+    max-width: 100vw;
   }
   
   .container {
@@ -111,8 +111,10 @@
     position: relative;
     height: 585px;
     width: 100%;
-    background-image: url("headera.png");
-    background-size: cover;
+    background-image: url("headera.png"), url("headerb.png");
+    background-size: cover, cover; 
+    background-repeat: no-repeat, no-repeat;
+    z-index: 0, 1;
   }
 
   .header .content {
@@ -129,9 +131,9 @@
     left: 0;
     width: 100%;
     height: 585px;
-    background-color: #fff;
+    background-color: #ddd;
     position: absolute;
-    opacity: 0.1;
+    opacity: 0.2;
   }
 
   .header .title {
@@ -212,11 +214,16 @@
     justify-content: center;
   }
 
-  .contact-me .buttons-contact a {
+  .contact-me .buttons-contact .button a {
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
   }
   
-  .contact-me .buttons-contact a .button {
+  .contact-me .buttons-contact .button{
     display: flex;
     flex-direction: row;
     width: 200px;
@@ -225,7 +232,7 @@
     box-sizing: border-box;
   }
 
-  .contact-me .buttons-contact .button.a {
+  .contact-me .buttons-contact .button.a a{
     border: 1px solid #FFC53D;
     box-sizing: border-box;
     border-radius: 15px;
@@ -235,7 +242,7 @@
     transition-timing-function: linear;
   }
 
-  .contact-me .buttons-contact .button.b {
+  .contact-me .buttons-contact .button.b a{
     background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
     border: 1px solid rgba(255, 197, 61, 0);
     border-radius: 15px;
@@ -245,12 +252,12 @@
     transition-timing-function: linear;
   }
 
-  .contact-me .buttons-contact .button.a:hover {
+  .contact-me .buttons-contact .button.a a:hover {
     background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
     color: #fff;
   }
 
-  .contact-me .buttons-contact .button.b:hover {
+  .contact-me .buttons-contact .button.b a:hover {
     background: #fff;
     color: #FFC53D;
     border-color: rgba(255, 197, 61, 1);
@@ -270,6 +277,10 @@
     position: relative;
     width: 1341px;
     height: 430px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: flex-start;
   }
 
   .about-me .color-box {
@@ -449,8 +460,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1440px;
-  height: 752px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
   margin-bottom: 72px;
 }
 
@@ -462,35 +474,35 @@
 }
 
 .portfolio .one {
-  width: 530px;
+  width: 36.8055555%;
   height: 346px;
   background-image: url("one.png");
   background-size: cover;
 }
 
 .portfolio .two {
-  width: 392px;
+  width: 27.2222222%;
   height: 346px;
   background-image: url("two.png");
   background-size: cover;
 }
 
 .portfolio .three {
-  width: 518px;
+  width: 35.9722222%;
   height: 346px;
   background-image: url("three.png");
   background-size: cover;
 }
 
 .portfolio .four {
-  width: 392px;
+  width: 27.2222222%;
   height: 352px;
   background-image: url("four.png");
   background-size: cover;
 }
 
 .portfolio .five {
-  width: 1048px;
+  width: 72.7777777%;
   height: 352px;
   background-image: url("five.png");
   background-size: cover;
@@ -502,10 +514,6 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
-}
-
-.portfolio a {
-  text-decoration: none;
 }
 
 h5 {
@@ -543,7 +551,17 @@ h5 {
   color: #FFFFFF;
 }
 
-.portfolio .box .view {
+.portfolio .box .view a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
   border-radius: 15px;
   background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
   box-sizing: border-box;
@@ -552,44 +570,49 @@ h5 {
   transition: font-size 0.7s ease-in-out, line-height 0.7s ease-in-out;
 }
 
-.portfolio .box .view:hover {
+.portfolio .box .view a:hover {
   font-size: 22px;
   line-height: 24px;
 }
 
 .contact-us {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  width: 1440px;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
   height: 785px;
   background: #FAFAFF;
 }
 
+.contact-us .content {
+  width: 86%;
+  height: 685px;
+  min-width: 1000px;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-us .main {
-  position: absolute;
   display: flex;
   flex-direction: row;
-  width: 1241px;
+  width: 100%;
   height: 621px;
-  left: 100px;
-  top: 74px;
   background: #FFFFFF;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 .contact-us h3 {
   align-self: flex-start;
-  position: absolute;
   font-family: Ubuntu;
-  left: 152px;
-  top: 18px;
+  margin-bottom: 27px;
+  margin-left: 52px;
 }
 
 .contact-us .main .orange {
-  width: 509px;
+  width: 41%;
   height: 100%;
   background: #FF9A3D;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
@@ -661,13 +684,13 @@ h5 {
 .contact-us .main .white {
   display: flex;
   flex-direction: column;
-  width: 732px;
+  width: 59%;
   height: 100%;
 }
 
 .contact-us .main .white .first {
   position: relative;
-  width: 732px;
+  width: 100%;
   height: 100px;
 }
 
@@ -698,14 +721,20 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 732px;
+  width: 100%;
   height: calc(100% - 100px);
+}
+
+.contact-us .main .white .second form {
+  width: 90%;
+  height: 56px;
+  margin-bottom: 17px;
 }
 
 .contact-us .main .white .second input[type=text],
 .contact-us .main .white .second textarea{
   box-sizing: border-box;
-  width: 639px;
+  width: 100%;
   height: 56px;
   background: #FAFAFF;
   border-radius: 15px;
@@ -780,3 +809,33 @@ h5 {
   letter-spacing: 0.02em;
   color: #A0A0A0;
 }
+
+/* @media only screen and (max-width: 1250px) {
+  .about-me {
+    height: 710px;
+    width: 60%;
+    align-self: center;
+  }
+  
+  .about-me .color-box {
+    height: 710px;
+    width: 100%;
+  }
+
+  .about-me .white-box {
+    height: 560px;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+  }
+
+  .about-me .white-box .informations {
+    width: 100%;
+    height: 50%;
+  }
+
+  .about-me .white-box .motivations {
+    width: 100%;
+    height: 50%;
+  }
+} */
