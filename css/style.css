@@ -959,4 +959,37 @@ h5 {
     height: 66.6666666%;
     width: 100%;
   }
+
+
+  /* PORTFOLIO */
+
+  .portfolio {
+    flex-direction: column;
+  }
+
+  .portfolio .one {
+    width: 100%;
+    height: 354px;
+  }
+
+  .portfolio .two {
+    width: 100%;
+    height: 883px;
+  }
+
+  .portfolio .three {
+    width: 100%;
+    height: 668px;
+  }
+
+  .portfolio .four {
+    width: 100%;
+    height: 900px;
+  }
+
+  .portfolio .five { 
+    width: 100%;
+    height: 330px;
+  }
+
 }
