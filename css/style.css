@@ -888,6 +888,7 @@ h5 {
     position: static;
     height: 1290px;
     width: 40%;
+    min-width: 320px;
     flex-direction: column;
     align-self: center;
     align-items: center;
